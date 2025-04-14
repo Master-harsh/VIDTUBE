@@ -3,7 +3,7 @@ import { DB_NAME } from "../constants.js";
 
 const connectDB = async () => {
     try {
-        const connectionInstance = await mongoose.connect("mongodb+srv://youtubeuser:Youtubeuser123@cluster0.4qc45.mongodb.net/vidtube");
+        const connectionInstance = await mongoose.connect("mongodb+srv://<username>:<password>@cluster0.4qc45.mongodb.net/vidtube");
         
         console.log(`MongoDB connected: ${connectionInstance.connection.host}`);
 
